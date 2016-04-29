@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <View
+        android:layout_width="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:layout_alignParentStart="true"
+        android:id="@+id/viewLine"
+        android:layout_marginStart="55dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/appTheme"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layoutPanel"
+        android:layout_below="@id/viewLine"
+        android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/durationTextView"
+                android:text="75"
+                android:background="@drawable/emptycircle"
+                android:layout_marginStart="35dp"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="20sp"
+               />
+
+
+        <ImageView
+            android:padding="-2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/timer"
+            android:id="@+id/exerciseIcon"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/durationTextView"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:text="Burpees"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/exerciseIcon"
+            android:id="@+id/exerciseName"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/plus"
+            android:id="@+id/duplicate"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

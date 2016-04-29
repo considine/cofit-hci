@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <ImageView
+        android:layout_alignParentStart="true"
+
+        android:layout_width="@dimen/exercise_image_width"
+        android:layout_height="@dimen/exercise_image_height"
+        android:contentDescription="@string/exercise_image"
+        android:src="@drawable/elevate_image_5"
+        android:id="@+id/exerciseImage"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Exercise Name"
+        android:fontFamily="sans-serif"
+        android:id="@+id/exerciseName"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="20sp"
+        android:layout_toEndOf="@+id/exerciseImage"
+        android:layout_marginStart="12dp"/>
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_marginEnd="5dp"
+        android:id="@+id/chevronIcon"
+        android:layout_height="15dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/black_chevron"/>
+
+</RelativeLayout>

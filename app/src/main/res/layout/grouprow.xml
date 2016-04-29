@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FF000000"
+        />
+
+    <TextView
+        android:layout_marginStart="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:id="@+id/groupText"
+        android:textSize="20sp"
+        android:layout_height="60dp"
+        />
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_marginTop="1dp"
+        android:id="@+id/pendingNotificationLayout"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:layout_height="59dp"
+        android:background="#fd9a27">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="One New"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="Workout"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">BengalWorkouts</string>
+    <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="appName">Bengal Workouts</string>
+    <string name="content_description">App Icon</string>
+
+    <string-array name="workouts">
+        <item>Bengal Bouts</item>
+        <item>Nate\'s MWF StayFit Class</item>
+        <item>Stacy\'s Zumba Class!</item>
+        <item>Stacy\'s Other Zumba Class!</item>
+
+    </string-array>
+    <string name="title_activity_workouts_page">WorkoutsPage</string>
+    <string name="exercises">MOVE LIBRARY</string>
+    <string name="exercise_image">Exercise Image</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <string name="home">Home</string>
+    <string name="workouts">Workouts</string>
+    <string name="stats">Stats</string>
+    <string name="groups">Groups</string>
+    <string name="move">Move Library</string>
+    <string-array name="navItems">
+        <item>@string/home</item>
+        <item>@string/workouts</item>
+        <item>@string/stats</item>
+        <item>@string/groups</item>
+        <item>@string/move</item>
+    </string-array>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

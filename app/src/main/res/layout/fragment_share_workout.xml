@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+                android:background="@color/white"
+             android:layout_height="match_parent"
+                android:padding="10dp"
+             tools:context="com.example.johnpconsidine.bengalworkouts.Fragments.ShareWorkout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textSize="20sp"
+        android:id="@+id/workoutTitleText"
+        android:text="WORKOUT NAME"/>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_below="@id/workoutTitleText"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:padding="5dp"
+    android:id="@+id/topPanel"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:weightSum="3">
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/timeTextView"
+            android:textSize="25sp"
+            android:text="Time"
+            android:textColor="@color/themeOrange"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timeTextView"
+            android:layout_centerHorizontal="true"
+            android:text="2:45"
+            android:textColor="@color/themeOrange"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:background="@color/appTheme"/>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/exerciseTextView"
+            android:textSize="20sp"
+            android:text="Exercises"
+            android:textColor="@color/themeOrange"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/exerciseTextView"
+            android:layout_centerHorizontal="true"
+            android:text="3"
+            android:textColor="@color/themeOrange"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:background="@color/appTheme"/>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/caloriesTextView"
+            android:textSize="25sp"
+            android:text="Calories"
+            android:textColor="@color/themeOrange"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/caloriesTextView"
+            android:layout_centerHorizontal="true"
+            android:text="60"
+            android:textColor="@color/themeOrange"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/appTheme"
+        android:layout_below="@+id/topPanel"
+        android:id="@+id/divider1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/shareWithPanel"
+        android:layout_below="@id/divider1"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"
+            android:text="SHARE WITH"/>
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:background="@android:drawable/btn_dropdown"
+            android:layout_alignParentEnd="true"
+            android:spinnerMode="dropdown" />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_below="@id/shareWithPanel"
+        android:id="@+id/pointersLayout"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="MESSAGE"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="7"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND"
+        android:id="@+id/sendText"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/pointersLayout"
+        android:textColor="@color/colorAccent"/>
+
+
+
+</RelativeLayout>

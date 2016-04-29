@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="appTheme"> #646464 </color>
+    <color name="themeOrange">#fe9a25</color>
+    <color name="white"> #FFFFFF </color>
+    <color name="colorAccent">#00b318</color>
+    <color name="colorAccentPressed">#00a316</color>
+    <color name="profileTop">#4d4d4d</color>
+    <color name="drawerMarker">#1ab128</color>
+    <color name="black">#FF000000</color>
+    <color name="gray">#979797</color>
+    <color name = "shadow">#99FFFFFF</color>
+</resources>
