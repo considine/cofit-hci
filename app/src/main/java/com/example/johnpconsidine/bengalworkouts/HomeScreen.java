@@ -199,7 +199,7 @@ public class HomeScreen extends AppCompatActivity {
         setTitle("BENGAL WORKOUTS");
         //LOAD IMAGES
         loadimage(workoutLayout, R.drawable.workoutphoto);
-        loadimage(statsLayout, R.drawable.stats1);
+        loadimage(statsLayout, R.drawable.stats);
         //set Menu Animatino
 
         // statsLayout.setMinimumWidth(screenWidth/2);
